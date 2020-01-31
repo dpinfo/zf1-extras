@@ -1,16 +1,12 @@
 {
-    "name": "zendframework/zf1-extras",
-    "description": "Zend Framework 1 Extras",
+    "name": "dpinfo/zf1-extras",
+    "description": "Zend Framework 1 Extras PHP 7.4 compatible",
     "type": "library",
-    "keywords": [
-        "framework",
-        "zf1"
-    ],
-    "homepage": "http://framework.zend.com/",
+    "homepage": "https://github.com/dpinfo/zf1-extras",
     "license": "BSD-3-Clause",
     "require": {
-        "php": ">=5.2.11",
-        "zendframework/zendframework1": "1.12.*"
+        "php": ">=7.4",
+        "dpinfo/zf1": ">=1.12.22"
     },
     "autoload": {
         "psr-0": {
@@ -20,9 +16,7 @@
     "include-path": [
         "library/"
     ],
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.12.x-dev"
-        }
+    "replace": {
+        "zendframework/zf1-extras": "1.*"
     }
 }
